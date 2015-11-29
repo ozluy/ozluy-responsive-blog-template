@@ -13,21 +13,36 @@
   color: #fff;
   background-color: #1a354e;
 }
+.btn-navy:hover {
+  background-color: #132739;
+}
 .btn-blue {
   color: #fff;
   background-color: #486072;
+}
+.btn-blue:hover {
+  background-color: #3b4f5e;
 }
 .btn-lightblue {
   color: #fff;
   background-color: #298bc3;
 }
+.btn-lightblue:hover {
+  background-color: #2378a9;
+}
 .btn-yellow {
   color: #fff;
   background-color: #5bb12f;
 }
+.btn-yellow:hover {
+  background-color: #5ea838;
+}
 .btn-red {
   color: #fff;
   background-color: #bd0102;
+}
+.btn-red:hover {
+  background-color: #980102;
 }
 html {
   margin: 0;
@@ -61,6 +76,26 @@ a {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+}
+.nav-hovered {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+.nav-hovered .navbar .navbar-links li a {
+  color: #a1a1a1;
+}
+.nav-hovered .navbar .navbar-links li a:hover {
+  color: #000;
+}
+.nav-hovered .navbar .ozluy-logo .ozluy-o {
+  border: solid #000 1px;
+}
+.nav-hovered .navbar .ozluy-logo .ozluy-zluy {
+  color: #000;
 }
 nav {
   position: fixed;
@@ -319,7 +354,7 @@ section {
   width: calc(25% - 15px);
   margin: 10px;
   float: left;
-  height: 250px;
+  height: 230px;
   background: rgba(72, 96, 114, 0.8);
 }
 .projects-shell .project-item .project-head {
@@ -337,7 +372,7 @@ section {
   transform: translateY(-50%);
 }
 .projects-shell .project-item .project-body {
-  height: 140px;
+  height: 120px;
   padding: 15px;
 }
 .projects-shell .project-item .project-body div {
@@ -368,6 +403,21 @@ section {
 .projects-shell .project-item:nth-child(4n) {
   margin-right: 0;
 }
+.section-talent {
+  background-color: #486072;
+  color: #fff;
+}
+.section-talent-technical {
+  background-color: #1a354e;
+  color: #fff;
+}
+.section-talent-language {
+  background-color: #fff;
+  color: #1a354e;
+}
+.section-talent-language .talent-shell .talent-item .talent-percentage-language {
+  border: solid 1px #1a354e;
+}
 .talent-shell {
   width: 100%;
   float: left;
@@ -388,15 +438,16 @@ section {
   position: relative;
   font-weight: 700;
   text-align: center;
-  border: solid 1px #486072;
+  border: solid 1px #fff;
   border-radius: 5px;
+  overflow: hidden;
 }
 .talent-shell .talent-item .talent-percentage .talent-my-percentage {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  background: #486072;
+  background: #5bb12f;
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);

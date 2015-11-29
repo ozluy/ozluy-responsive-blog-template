@@ -39,26 +39,46 @@
 .btn-navy {
     color: #fff;
     background-color: @color-navy;
+
+    &:hover {
+        background-color: #132739;
+    }
 }
 
 .btn-blue {
     color: #fff;
     background-color: @color-blue;
+
+    &:hover {
+        background-color: #3b4f5e;
+    }
 }
 
 .btn-lightblue {
     color: #fff;
     background-color: @color-lightblue;
+
+    &:hover {
+        background-color: #2378a9;
+    }
 }
 
 .btn-yellow {
     color: #fff;
     background-color: @color-yellow;
+
+    &:hover {
+        background-color: #5ea838;
+    }
 }
 
 .btn-red {
     color: #fff;
     background-color: @color-red;
+
+    &:hover {
+        background-color: #980102;
+    }
 }
 
 html {
@@ -73,7 +93,7 @@ body {
     font-size: @font-size-xs;
     padding: 0;
     /*padding-top: 70px; //For fixed nav*/
-    width:100%;
+    width: 100%;
 }
 
 a {
@@ -100,6 +120,39 @@ a {
 }
 
 
+.nav-hovered {
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -ms-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    background-color: #fff;
+
+    .navbar {
+        .navbar-links {
+            li {
+                a {
+                    color: #a1a1a1;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+
+        .ozluy-logo {
+            .ozluy-o {
+                border: solid #000 1px;
+            }
+
+            .ozluy-zluy {
+                color: #000;
+            }
+        }
+    }
+}
 
 nav {
     position: fixed;
@@ -393,7 +446,7 @@ section {
         width: calc(~"25% - 15px");
         margin: 10px;
         float: left;
-        height: 250px;
+        height: 230px;
         background: rgba(72,96,114,.8);
 
         .project-head {
@@ -409,7 +462,7 @@ section {
         }
 
         .project-body {
-            height: 140px;
+            height: 120px;
             padding: 15px;
 
             div {
@@ -442,6 +495,26 @@ section {
 }
 
 
+.section-talent {
+    background-color: @color-blue;
+    color: #fff;
+}
+.section-talent-technical {
+    background-color: #1a354e;
+    color: #fff;
+}
+.section-talent-language {
+    background-color: #fff;
+    color: @color-navy;
+
+    .talent-shell {
+        .talent-item {
+            .talent-percentage-language {
+                border: solid 1px @color-navy;
+            }
+        }
+    }
+}
 
 .talent-shell {
     width: 100%;
@@ -450,11 +523,12 @@ section {
     .talent-item {
         margin: 10px;
         width: calc(~"25% - 15px");
-        float:left;
+        float: left;
+
         .talent-title {
             font-weight: 700;
             text-align: center;
-            padding:5px 0;
+            padding: 5px 0;
         }
 
         .talent-percentage {
@@ -463,15 +537,16 @@ section {
             position: relative;
             font-weight: 700;
             text-align: center;
-            border: solid 1px @color-blue;
+            border: solid 1px #fff;
             border-radius: 5px;
+            overflow: hidden;
 
             .talent-my-percentage {
                 position: absolute;
                 left: 0;
                 top: 0;
                 height: 100%;
-                background: @color-blue;
+                background: @color-yellow;
                 background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
                 background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
                 background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
