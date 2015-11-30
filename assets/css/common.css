@@ -463,4 +463,36 @@ section {
 .talent-shell .talent-item:nth-child(4n) {
   margin-right: 0;
 }
+.section-about {
+  color: #486072;
+}
+.about-shell {
+  width: 100%;
+  float: left;
+}
+.about-shell .profile-part {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  padding: 0 20px 20px 0;
+}
+.about-shell .profile-part .profile-img-shell {
+  border-radius: 10%;
+  overflow: hidden;
+  border: groove 5px #486072;
+}
+.about-shell .profile-part .profile-img-shell img {
+  display: inline-block;
+  width: 100%;
+}
+.about-shell .profile-part .profile-detail-shell h4 small {
+  font-weight: 300;
+  color: #a1a1a1;
+}
+.about-shell .about-text {
+  width: auto;
+}
+.about-shell .about-text .about-text-title {
+  float: left;
+}
 /*# sourceMappingURL=common.css.map */

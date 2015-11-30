@@ -9,6 +9,7 @@ $(document).ready(function () {
         auto: true,
         controls: false,
         easing: 'ease',
+        touchEnabled:false,
         pager: false
         //onSliderLoad: function () {
         //    //$("#slider-wrapper").fadeIn();

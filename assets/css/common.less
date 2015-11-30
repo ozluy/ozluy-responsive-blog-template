@@ -4,6 +4,7 @@
 @color-red: #bd0102;
 @color-lightblue: #298bc3;
 @color-yellow: #5bb12f;
+@color-gray: #a1a1a1;
 @desktop-width: 1200px;
 @tablet-width: 991px;
 @mobile-width: 768px;
@@ -85,7 +86,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 body {
@@ -96,7 +97,7 @@ body {
     padding: 0;
     /*padding-top: 70px; //For fixed nav*/
     width: 100%;
-     height:100%;
+    height: 100%;
 }
 
 a {
@@ -135,7 +136,7 @@ a {
         .navbar-links {
             li {
                 a {
-                    color: #a1a1a1;
+                    color: @color-gray;
 
                     &:hover {
                         color: #000;
@@ -215,7 +216,7 @@ nav {
                 a {
                     color: #fff;
                     font-weight: @bold;
-                    text-transform: uppercase;
+                    .capital;
                 }
             }
 
@@ -240,7 +241,7 @@ nav {
         .navbar-links {
             li {
                 a {
-                    color: #a1a1a1;
+                    color: @color-gray;
 
                     &:hover {
                         color: #000;
@@ -428,7 +429,7 @@ section {
 
 .main-title {
     text-align: center;
-    text-transform: uppercase;
+    .capital;
     font-weight: @bold;
 }
 
@@ -502,10 +503,12 @@ section {
     background-color: @color-blue;
     color: #fff;
 }
+
 .section-talent-technical {
     background-color: #1a354e;
     color: #fff;
 }
+
 .section-talent-language {
     background-color: #fff;
     color: @color-navy;
@@ -565,5 +568,50 @@ section {
 
     .talent-item:nth-child(4n) {
         margin-right: 0;
+    }
+}
+.section-about{
+    color: @color-blue;
+}
+.about-shell {
+    width: 100%;
+    float: left;
+
+    .profile-part {
+        display: inline-block;
+        float: left;
+        width: 300px;
+        padding: 0 20px 20px 0;
+
+        .profile-img-shell {
+            border-radius: 10%;
+            overflow: hidden;
+            border: groove 5px @color-blue;
+
+            img {
+                display: inline-block;
+                width: 100%
+            }
+        }
+
+        .profile-detail-shell {
+            h2 {
+            }
+
+            h4 {
+                small {
+                    font-weight: @light;
+                    color: @color-gray;
+                }
+            }
+        }
+    }
+
+    .about-text {
+        width: auto;
+
+        .about-text-title {
+            float: left;
+        }
     }
 }
