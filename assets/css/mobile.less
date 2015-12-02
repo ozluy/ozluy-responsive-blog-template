@@ -1,9 +1,19 @@
-﻿
+﻿@nav-bg-color: #444444;
+@color-navy: #1a354e;
+@color-blue: #486072;
+@color-red: #bd0102;
+@color-lightblue: #298bc3;
+@color-yellow: #5bb12f;
+@color-gray: #a1a1a1;
+@desktop-width: 1200px;
+@tablet-width: 991px;
+@mobile-width: 768px;
+
 
 
 /* Menu icon styles */
 
-.menu-icon-wrapper {  
+.menu-icon-wrapper {
     position: relative;
     display: inline-block;
     width: 34px;
@@ -41,9 +51,9 @@
             fill: transparent;
         }
     }
-    &:hover{
-            stroke: #000;
 
+    &:hover {
+        stroke: #000;
     }
 }
 
@@ -86,20 +96,22 @@
 
 
 .device__screen {
-      display:none !important;
-    float:right;
+    display: none !important;
+    float: right;
     position: relative;
     overflow: hidden;
-    width: 100px;
+    width: 70px;
     height: 70px;
     text-align: left;
     border-radius: 4px 4px 0 0;
 }
-.see-all-block{
-    width:100%;
-    float:left;
-    text-align:center;
+
+.see-all-block {
+    width: 100%;
+    float: left;
+    text-align: center;
 }
+
 .device__screen {
     background: transparent;
 }
@@ -220,5 +232,121 @@
     .device__screen {
         margin: 0;
         border-radius: 0;
+    }
+}
+
+
+@media(max-width:@desktop-width) {
+    .container {
+        width: calc(~"100% - 30px") !important;
+    }
+}
+
+@media(max-width:@mobile-width) { //768 - 991 tablets portraits
+    .socials {
+        width: 100%;
+        height: 50%;
+
+        li {
+            display: inline;
+            float: none;
+            position: relative;
+            top: 25%;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        height: 50%;
+        position: unset;
+        top: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    footer {
+        height: 150px;
+        text-align: center;
+    }
+
+    .bg-nav {
+        background-color: @nav-bg-color !important;
+    }
+
+    nav {
+        .navbar {
+            .navbar-links {
+                -webkit-transition: all 2s ease;
+                -moz-transition: all 2s ease;
+                -ms-transition: all 2s ease;
+                -o-transition: all 2s ease;
+                transition: all 2s ease;
+                position: fixed;
+                display: none;
+                top: 70px;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+                float: none;
+                list-style: none;
+                margin: 0;
+                width: 300px;
+                text-align: center;
+                background-color: rgba(25,20,21,.90);
+                padding: 0;
+                right: 0;
+                margin-left: -15px;
+                bottom: 0;
+                height: 100%;
+                margin-right: -300px;
+
+                li {
+                    float: none;
+                    padding: 20px 0 !important;
+
+                    > a {
+                        color: #fff !important;
+                        padding: 0 0 0 0 !important;
+                        text-transform: capitalize;
+                    }
+
+                    border-bottom: dotted 1px rgba(255,255,255,.2);
+                }
+            }
+        }
+    }
+
+    .device__screen {
+        display: inline-block !important;
+    }
+
+    nav .navbar .ozluy-logo .ozluy-zluy {
+        color: #fff !important;
+    }
+
+    nav .navbar .ozluy-logo .ozluy-o {
+        border: solid @nav-bg-color 1px !important;
+    }
+
+    nav {
+        .navbar {
+            .navbar-links-opened {
+                 -webkit-transition: all 2s ease;
+                -moz-transition: all 2s ease;
+                -ms-transition: all 2s ease;
+                -o-transition: all 2s ease;
+                transition: all 2s ease;
+                -moz-transform: translateX(-300px);
+                -webkit-transform: translateX(-300px);
+                -o-transform: translateX(-300px);
+                -ms-transform: translateX(-300px);
+                transform: translateX(-300px);
+                display: block;
+            }
+        }
     }
 }

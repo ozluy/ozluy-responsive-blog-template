@@ -9,27 +9,35 @@ $(document).ready(function () {
         auto: true,
         controls: false,
         easing: 'ease',
-        touchEnabled:false,
-        pager: false
-        //onSliderLoad: function () {
-        //    //$("#slider-wrapper").fadeIn();
-        //    //$(".bx-slider-loader").hide();
-        //}
+        touchEnabled: false,
+        pager: false,
+
     });
 
-    
+
+
 });
 
 $(window).scroll(function () {
     if ($(window).scrollTop() > 70) {
         $('.bg-nav').addClass('nav-hovered');
     }
-   else {
+    else {
         $('.bg-nav').removeClass('nav-hovered');
     }
 });
-    
 
 
-}
+//showMobileMunu 
+$('#menu-icon-wrapper').click(function () {
+    if ($('.navbar-links').hasClass('navbar-links-opened')) {
+        $('.navbar-links').removeClass('navbar-links-opened')
+    }
+    else {
+        $('.navbar-links').addClass('navbar-links-opened')
+    }
+})
+
+
+
 

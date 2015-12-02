@@ -65,7 +65,7 @@
   float: right;
   position: relative;
   overflow: hidden;
-  width: 100px;
+  width: 70px;
   height: 70px;
   text-align: left;
   border-radius: 4px 4px 0 0;
@@ -173,6 +173,99 @@
   .device__screen {
     margin: 0;
     border-radius: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: calc(100% - 30px) !important;
+  }
+}
+@media (max-width: 768px) {
+  .socials {
+    width: 100%;
+    height: 50%;
+  }
+  .socials li {
+    display: inline;
+    float: none;
+    position: relative;
+    top: 25%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .copyright {
+    width: 100%;
+    height: 50%;
+    position: unset;
+    top: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  footer {
+    height: 150px;
+    text-align: center;
+  }
+  .bg-nav {
+    background-color: #444444 !important;
+  }
+  nav .navbar .navbar-links {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    position: fixed;
+    display: none;
+    top: 70px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    float: none;
+    list-style: none;
+    margin: 0;
+    width: 300px;
+    text-align: center;
+    background-color: rgba(25, 20, 21, 0.9);
+    padding: 0;
+    right: 0;
+    margin-left: -15px;
+    bottom: 0;
+    height: 100%;
+    margin-right: -300px;
+  }
+  nav .navbar .navbar-links li {
+    float: none;
+    padding: 20px 0 !important;
+    border-bottom: dotted 1px rgba(255, 255, 255, 0.2);
+  }
+  nav .navbar .navbar-links li > a {
+    color: #fff !important;
+    padding: 0 0 0 0 !important;
+    text-transform: capitalize;
+  }
+  .device__screen {
+    display: inline-block !important;
+  }
+  nav .navbar .ozluy-logo .ozluy-zluy {
+    color: #fff !important;
+  }
+  nav .navbar .ozluy-logo .ozluy-o {
+    border: solid #444444 1px !important;
+  }
+  nav .navbar .navbar-links-opened {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    -moz-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
+    display: block;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
