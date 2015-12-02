@@ -176,11 +176,70 @@
   }
 }
 @media (max-width: 1200px) {
+  .talent-shell .talent-item {
+    width: calc(33.3% - 15px);
+    margin: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(3n+1) {
+    margin-left: 0 !important;
+  }
+  .talent-shell .talent-item:nth-child(3n) {
+    margin-right: 0 !important;
+  }
+  .projects-shell .project-item {
+    width: calc(33.3% - 15px);
+    margin: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(3n+1) {
+    margin-left: 0 !important;
+  }
+  .projects-shell .project-item:nth-child(3n) {
+    margin-right: 0 !important;
+  }
   .container {
     width: calc(100% - 30px) !important;
   }
 }
 @media (max-width: 768px) {
+  .talent-shell .talent-item {
+    width: calc(50.3% - 15px);
+    margin: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(3n+1) {
+    margin-left: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(3n) {
+    margin-right: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(odd) {
+    margin-left: 0 !important;
+  }
+  .talent-shell .talent-item:nth-child(even) {
+    margin-right: 0 !important;
+  }
+  .projects-shell .project-item {
+    width: calc(50.3% - 15px);
+    margin: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(3n+1) {
+    margin-left: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(3n) {
+    margin-right: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(odd) {
+    margin-left: 0 !important;
+  }
+  .projects-shell .project-item:nth-child(even) {
+    margin-right: 0 !important;
+  }
+  .about-shell .profile-part {
+    width: 100%;
+    padding: 0;
+  }
+  .about-shell .about-text {
+    width: 100%;
+  }
   .socials {
     width: 100%;
     height: 50%;
@@ -266,6 +325,40 @@
     -ms-transform: translateX(-300px);
     transform: translateX(-300px);
     display: block;
+  }
+}
+@media (max-width: 500px) {
+  .talent-shell .talent-item {
+    width: calc(100% - 15px);
+    margin: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(3n+1) {
+    margin-left: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(3n) {
+    margin-right: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(odd) {
+    margin-left: 10px !important;
+  }
+  .talent-shell .talent-item:nth-child(even) {
+    margin-right: 10px !important;
+  }
+  .projects-shell .project-item {
+    width: calc(100% - 15px);
+    margin: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(3n+1) {
+    margin-left: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(3n) {
+    margin-right: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(odd) {
+    margin-left: 10px !important;
+  }
+  .projects-shell .project-item:nth-child(even) {
+    margin-right: 10px !important;
   }
 }
 /*# sourceMappingURL=mobile.css.map */

@@ -502,7 +502,8 @@ section {
   color: #a1a1a1;
 }
 .about-shell .about-text {
-  width: auto;
+  float: left;
+  width: calc(100% - 320px);
 }
 .about-shell .about-text .about-text-title {
   float: left;
