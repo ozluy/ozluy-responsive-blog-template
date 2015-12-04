@@ -31,10 +31,10 @@ $(window).scroll(function () {
 //showMobileMunu 
 $('#menu-icon-wrapper').click(function () {
     if ($('.navbar-links').hasClass('navbar-links-opened')) {
-        $('.navbar-links').removeClass('navbar-links-opened')
+        $('.navbar-links').removeClass('navbar-links-opened');
     }
     else {
-        $('.navbar-links').addClass('navbar-links-opened')
+        $('.navbar-links').addClass('navbar-links-opened');
     }
 })
 

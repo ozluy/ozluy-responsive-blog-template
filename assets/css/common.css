@@ -49,8 +49,14 @@ html {
   padding: 0;
   height: 100%;
   width: 100%;
+  min-height: 100%;
 }
 body {
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
   font-weight: 400;
   margin: 0;
   font-family: Ubuntu;
@@ -58,6 +64,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  min-height: 100%;
+  float: left;
   /*padding-top: 70px; //For fixed nav*/
 }
 a {
@@ -283,6 +291,7 @@ footer {
   padding: 10px 0;
   text-align: center;
   color: #486072;
+  clear: both;
 }
 .note-for-template-likers a {
   color: #bd0102;
