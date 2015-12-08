@@ -655,10 +655,17 @@ section {
     float: left;
 
     .blog-item {
-        padding: 20px;
-        width: calc(~"50% -20px");
+        margin: 20px;
+        width: calc(~"50% -28px");
         float: left;
-
+        -webkit-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
+        -moz-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
+        -ms-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
+        -o-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
+        box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
+        border: solid 2px #f2f2f2;
+        border-radius: 5px;
+        padding:0 0 20px 0;
         .blog-item-img-shell {
             float: left;
             width: 100%;
@@ -666,36 +673,39 @@ section {
 
             img {
                 width: 100%;
+                border-top-left-radius:5px;
+                border-top-right-radius:5px;
             }
         }
 
         .blog-item-text-shell {
             float: left;
-             width: calc(~"100% - 30px");
-            padding: 0 15px;           
+            width: calc(~"100% - 30px");
+            padding: 0 15px;
 
             .title {
                 font-size: @font-size-m;
                 font-weight: @bold;
-                height:20px;
+                height: 20px;
                 overflow: hidden;
                 line-height: 20px;
             }
-             .limited-text {
+
+            .limited-text {
                 height: 100px;
                 overflow: hidden;
                 line-height: 20px;
-                *{
+
+                * {
                     padding: 0;
                     margin: 0;
                 }
             }
-           
         }
     }
 
     .blog-item:nth-child(even) {
-        padding-right: 0;
+        margin-right: 0;
 
         .blog-item-img-shell {
             float: right;
@@ -707,6 +717,6 @@ section {
     }
 
     .blog-item:nth-child(odd) {
-        padding-left: 0;
+        margin-left: 0;
     }
 }
