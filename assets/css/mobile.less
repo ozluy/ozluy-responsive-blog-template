@@ -354,7 +354,7 @@
             float: none;
             position: relative;
             top: 0;
-            line-height:80px;
+            line-height: 80px;
             -webkit-transform: none;
             -ms-transform: none;
             transform: none;
@@ -368,11 +368,11 @@
         top: auto;
         -webkit-transform: none;
         -ms-transform: none;
-        line-height:40px;
+        line-height: 40px;
         transform: none;
     }
 
-    
+
 
     footer {
         height: 120px;
@@ -405,11 +405,12 @@
                 background-color: rgba(25,20,21,.90);
                 padding: 0;
                 right: 0;
-                bottom:0;
-                visibility:hidden;
+                bottom: 0;
+                visibility: hidden;
                 margin-left: -15px;
                 height: 100%;
                 margin-right: -300px;
+
                 li {
                     float: none;
                     padding: 20px 0 !important;
@@ -446,13 +447,22 @@
                 -o-transform: translateX(-300px);
                 -ms-transform: translateX(-300px);
                 transform: translateX(-300px);
-                visibility:visible;
+                visibility: visible;
             }
+        }
+    }
+    .blog-shell {   
+        .blog-item {
+            width:100%;
+            padding-left:0 !important;
+            padding-right:0 !important;
         }
     }
 }
 
 @media(max-width:500px) { //768 - 991 tablets portraits
+    
+
     .talent-shell {
         .talent-item {
             width: calc(~"100% - 15px");

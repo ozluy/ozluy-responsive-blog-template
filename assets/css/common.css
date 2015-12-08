@@ -548,6 +548,9 @@ section {
 .blog-shell .blog-item .blog-item-text-shell .title {
   font-size: 20px;
   font-weight: 700;
+  height: 20px;
+  overflow: hidden;
+  line-height: 20px;
 }
 .blog-shell .blog-item .blog-item-text-shell .limited-text {
   height: 100px;

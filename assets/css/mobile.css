@@ -323,6 +323,11 @@
     transform: translateX(-300px);
     visibility: visible;
   }
+  .blog-shell .blog-item {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 @media (max-width: 500px) {
   .talent-shell .talent-item {
