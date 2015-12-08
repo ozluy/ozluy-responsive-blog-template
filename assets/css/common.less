@@ -459,9 +459,9 @@ section {
     .project-item {
         border-radius: 5px;
         overflow: hidden;
-        width:23%;//For Old Browsers
-        width: -webkit-calc(~"25% - 15px");//For Old Browsers
-        width: -moz-calc(~"25% - 15px");//For Old Browsers
+        width: 23%; //For Old Browsers
+        width: -webkit-calc(~"25% - 15px"); //For Old Browsers
+        width: -moz-calc(~"25% - 15px"); //For Old Browsers
         width: calc(~"25% - 15px");
         margin: 10px;
         float: left;
@@ -556,9 +556,9 @@ section {
 
     .talent-item {
         margin: 10px;
-        width:23%;//For Old Browsers
-        width: -webkit-calc(~"25% - 15px");//For Old Browsers
-        width: -moz-calc(~"25% - 15px");//For Old Browsers
+        width: 23%; //For Old Browsers
+        width: -webkit-calc(~"25% - 15px"); //For Old Browsers
+        width: -moz-calc(~"25% - 15px"); //For Old Browsers
         width: calc(~"25% - 15px");
         float: left;
 
@@ -617,13 +617,13 @@ section {
         padding: 0 20px 20px 0;
 
         .profile-img-shell {
-            border-radius: 10%;
-            overflow: hidden;
-            border: groove 5px @color-blue;
+
 
             img {
+                border-radius: 10%;
+                border: solid 5px @color-blue;
                 display: inline-block;
-                width: 100%;
+                width: calc(~"100%- 10px");
             }
         }
 
@@ -642,10 +642,68 @@ section {
 
     .about-text {
         float: left;
-        width: calc(~"100% - 320px");
+        width: calc(~"100% - 335px");
 
         .about-text-title {
             float: left;
         }
+    }
+}
+
+.blog-shell {
+    width: 100%;
+    float: left;
+
+    .blog-item {
+        padding: 20px;
+        width: calc(~"50% -20px");
+        float: left;
+
+        .blog-item-img-shell {
+            float: left;
+            width: 100%;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .blog-item-text-shell {
+            float: left;
+             width: calc(~"100% - 30px");
+            padding: 0 15px;           
+
+            .title {
+                font-size: @font-size-m;
+                font-weight: @bold;
+            }
+             .limited-text {
+                height: 100px;
+                overflow: hidden;
+                line-height: 20px;
+                *{
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+           
+        }
+    }
+
+    .blog-item:nth-child(even) {
+        padding-right: 0;
+
+        .blog-item-img-shell {
+            float: right;
+        }
+
+        .blog-item-text-shell {
+            float: right;
+        }
+    }
+
+    .blog-item:nth-child(odd) {
+        padding-left: 0;
     }
 }

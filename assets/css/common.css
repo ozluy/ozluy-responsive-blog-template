@@ -506,14 +506,11 @@ section {
   width: 300px;
   padding: 0 20px 20px 0;
 }
-.about-shell .profile-part .profile-img-shell {
-  border-radius: 10%;
-  overflow: hidden;
-  border: groove 5px #486072;
-}
 .about-shell .profile-part .profile-img-shell img {
+  border-radius: 10%;
+  border: solid 5px #486072;
   display: inline-block;
-  width: 100%;
+  width: calc(100%- 10px);
 }
 .about-shell .profile-part .profile-detail-shell h4 small {
   font-weight: 300;
@@ -521,9 +518,56 @@ section {
 }
 .about-shell .about-text {
   float: left;
-  width: calc(100% - 320px);
+  width: calc(100% - 335px);
 }
 .about-shell .about-text .about-text-title {
   float: left;
+}
+.blog-shell {
+  width: 100%;
+  float: left;
+}
+.blog-shell .blog-item {
+  padding: 20px;
+  width: calc(50% -20px);
+  float: left;
+}
+.blog-shell .blog-item .blog-item-img-shell {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.blog-shell .blog-item .blog-item-img-shell img {
+  width: 100%;
+}
+.blog-shell .blog-item .blog-item-text-shell {
+  float: left;
+  width: calc(100% - 30px);
+  padding: 0 15px;
+}
+.blog-shell .blog-item .blog-item-text-shell .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.blog-shell .blog-item .blog-item-text-shell .limited-text {
+  height: 100px;
+  overflow: hidden;
+  line-height: 20px;
+}
+.blog-shell .blog-item .blog-item-text-shell .limited-text * {
+  padding: 0;
+  margin: 0;
+}
+.blog-shell .blog-item:nth-child(even) {
+  padding-right: 0;
+}
+.blog-shell .blog-item:nth-child(even) .blog-item-img-shell {
+  float: right;
+}
+.blog-shell .blog-item:nth-child(even) .blog-item-text-shell {
+  float: right;
+}
+.blog-shell .blog-item:nth-child(odd) {
+  padding-left: 0;
 }
 /*# sourceMappingURL=common.css.map */
