@@ -163,6 +163,7 @@ a {
             }
 
             .ozluy-zluy {
+                text-transform:lowercase;
                 color: #000;
             }
         }
@@ -304,7 +305,11 @@ nav {
         z-index: 1;
     }
 }
-
+.fork-me-on-github{
+    position:absolute;
+    right:0;
+    top:70px;
+}
 .slider-detail {
     position: relative;
     width: 300px;
@@ -617,8 +622,6 @@ section {
         padding: 0 20px 20px 0;
 
         .profile-img-shell {
-
-
             img {
                 border-radius: 10%;
                 border: solid 5px @color-blue;
@@ -655,15 +658,16 @@ section {
     float: left;
 
     .blog-item {
-        margin: 20px;
-        width: calc(~"50% -28px");
+        margin: 15px;
+        width:31%;//for old browsers
+        width: calc(~"33.3% - 22px");
         float: left;
-        -webkit-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
-        -moz-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
-        -ms-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
-        -o-box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
-        box-shadow: 0 6px 3px -3px rgba(0,0,0,.2);
-        border: solid 2px #f2f2f2;
+        -webkit-box-shadow: 0 6px 3px -3px rgba(0,0,0,.1);
+        -moz-box-shadow: 0 6px 3px -3px rgba(0,0,0,.1);
+        -ms-box-shadow: 0 6px 3px -3px rgba(0,0,0,.1);
+        -o-box-shadow: 0 6px 3px -3px rgba(0,0,0,.1);
+        box-shadow: 0 6px 3px -3px rgba(0,0,0,.1);
+        border: solid 1px #f2f2f2;
         border-radius: 5px;
         padding:0 0 20px 0;
         .blog-item-img-shell {
@@ -704,7 +708,7 @@ section {
         }
     }
 
-    .blog-item:nth-child(even) {
+    .blog-item:nth-child(3n) {
         margin-right: 0;
 
         .blog-item-img-shell {
@@ -716,7 +720,7 @@ section {
         }
     }
 
-    .blog-item:nth-child(odd) {
+    .blog-item:nth-child(3n+1) {
         margin-left: 0;
     }
 }

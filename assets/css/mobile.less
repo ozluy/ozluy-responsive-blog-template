@@ -96,6 +96,7 @@
 
 
 .device__screen {
+    margin-right:-10px !important;
     display: none !important;
     float: right;
     position: relative;
@@ -237,6 +238,7 @@
 
 
 @media(max-width:@desktop-width) {
+
     .talent-shell {
         .talent-item {
             width: calc(~"33.3% - 15px");
@@ -283,6 +285,24 @@
         }
 
         .about-text {
+        }
+    }
+
+   
+}
+@media(max-width:@tablet-width){
+     .blog-shell {
+        .blog-item {
+            width: calc(~"50% - 18px");
+            margin: 15px !important;
+        }
+
+        .blog-item:nth-child(even) {
+            margin-right: 0 !important;
+        }
+
+        .blog-item:nth-child(odd) {
+            margin-left: 0 !important;
         }
     }
 }
@@ -451,17 +471,19 @@
             }
         }
     }
-    .blog-shell {   
+     .blog-shell {
         .blog-item {
-            width:100%;
-            margin-left:0 !important;
-            margin-right:0 !important;
+            width: calc(~"100% - 2px");
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
+
+       
     }
 }
 
 @media(max-width:500px) { //768 - 991 tablets portraits
-    
+
 
     .talent-shell {
         .talent-item {

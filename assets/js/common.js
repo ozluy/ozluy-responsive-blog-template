@@ -1,8 +1,8 @@
 ﻿
 $(document).ready(function () {
     $('.bxslider').bxSlider({
-        //mode: 'fade',
-        mode: 'vertical',
+        mode: 'fade',
+        //mode: 'vertical',
         useCSS: true,
         infiniteLoop: true,
         //speed: 4000,
