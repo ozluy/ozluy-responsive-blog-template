@@ -1,2 +1,2 @@
 # ozluy
-I am gonna make my own website, my own design, my own development and fun!
+Its a responsive blog website template for free for anyone interested.
