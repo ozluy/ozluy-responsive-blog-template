@@ -194,16 +194,7 @@ ul.bxslider {
   height: 500px !important;
   position: relative;
   width: 100%;
-}
-.bxslider-subpages {
-  height: 300px !important;
-  position: relative;
-  width: 100%;
-}
-.bxslider-subpages li {
-  height: 300px !important;
-  position: relative;
-  width: 100%;
+  opacity: 1 !important;
 }
 .bxslider li {
   background-repeat: no-repeat;

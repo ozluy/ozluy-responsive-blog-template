@@ -253,9 +253,9 @@ nav:hover .navbar .ozluy-logo .ozluy-zluy {
 }
 .slider-detail i {
   display: inline-block;
-  line-height: 110px;
+  line-height: 100px;
   width: 20%;
-  margin-left: 5%;
+  margin-left: 3%;
   font-size: 40px;
   float: left;
 }
@@ -329,10 +329,11 @@ section {
 }
 .socials li a {
   font-size: 25px;
-  padding: 10px 10px 4px 10px;
-  border-radius: 50%;
+  padding: 10px 10px 10px 10px;
   color: #fff;
-  border: solid 2px #fff;
+}
+.socials li a:hover {
+  border-bottom: solid 2px #fff;
 }
 .socials .social-github:hover {
   border-color: #666;
@@ -353,6 +354,7 @@ section {
 .main-title {
   text-align: center;
   text-transform: uppercase;
+  font-size: 25px;
   font-weight: 700;
 }
 .copyright {
@@ -589,5 +591,45 @@ section {
 }
 .blog-shell .blog-item:nth-child(3n+1) {
   margin-left: 0;
+}
+.references-shell {
+  float: left;
+}
+.references-shell .reference-item {
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.references-shell .reference-item .img-shell {
+  width: 50%;
+  float: left;
+}
+.references-shell .reference-item .img-shell img {
+  width: 90%;
+}
+.references-shell .reference-item .text-shell {
+  width: 50%;
+  float: left;
+}
+.references-shell .reference-item .text-shell .title {
+  font-size: 20px;
+}
+.references-shell .reference-item:nth-child(even) .img-shell {
+  float: right;
+}
+.references-shell .reference-item:nth-child(even) .text-shell {
+  float: right;
+}
+.bxslider-subpages {
+  height: 300px !important;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bxslider-subpages li {
+  height: 300px !important;
+  position: relative;
+  width: 100%;
 }
 /*# sourceMappingURL=common.css.map */
