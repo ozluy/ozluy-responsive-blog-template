@@ -16,7 +16,7 @@
 .menu-icon-wrapper svg {
   position: absolute;
   top: -33px;
-  left: -33px;
+  left: -28px;
   -webkit-transform: scale(0.1);
   -ms-transform: scale(0.1);
   transform: scale(0.1);
@@ -167,7 +167,6 @@
     padding: 3em 1em;
   }
   .device {
-    width: 100%;
     height: auto;
     background-image: none;
   }
@@ -340,6 +339,38 @@
     width: calc(100% - 2px);
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  .contact-shell {
+    padding: 20px 0;
+    float: left;
+    width: 100%;
+  }
+  .contact-shell .contact-form .form-element-left {
+    width: 100%;
+    float: left;
+  }
+  .contact-shell .contact-form .form-element-left > input {
+    display: block;
+    width: -webkit-calc(100% - 34px);
+    width: -moz-calc(100% - 34px);
+    width: calc(100% - 34px);
+  }
+  .contact-shell .contact-form .form-element-right {
+    float: left;
+    width: 100%;
+  }
+  .contact-shell .contact-form .form-element-right label {
+    margin-left: 0;
+    padding-left: 15px;
+  }
+  .contact-shell .contact-form .form-element-right > textarea {
+    margin: 0;
+    width: -webkit-calc(100% - 34px);
+    width: -moz-calc(100% - 34px);
+    width: calc(100% - 34px);
+  }
+  .contact-shell .contact-form .form-element-right .contact-send-button-shell button {
+    float: right;
   }
 }
 @media (max-width: 500px) {

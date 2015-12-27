@@ -32,7 +32,7 @@
 .menu-icon-wrapper svg {
     position: absolute;
     top: -33px;
-    left: -33px;
+    left: -28px;
     -webkit-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
@@ -96,7 +96,7 @@
 
 
 .device__screen {
-    margin-right:-10px !important;
+    margin-right: -10px !important;
     display: none !important;
     float: right;
     position: relative;
@@ -225,7 +225,6 @@
     }
 
     .device {
-        width: 100%;
         height: auto;
         background-image: none;
     }
@@ -287,11 +286,10 @@
         .about-text {
         }
     }
-
-   
 }
-@media(max-width:@tablet-width){
-     .blog-shell {
+
+@media(max-width:@tablet-width) {
+    .blog-shell {
         .blog-item {
             width: calc(~"50% - 18px");
             margin: 15px !important;
@@ -471,14 +469,54 @@
             }
         }
     }
-     .blog-shell {
+
+    .blog-shell {
         .blog-item {
             width: calc(~"100% - 2px");
             margin-left: 0 !important;
             margin-right: 0 !important;
         }
+    }
 
-       
+    .contact-shell {
+        padding: 20px 0;
+        float: left;
+        width: 100%;
+
+        .contact-form {
+            .form-element-left {
+                width: 100%;
+                float: left;
+
+                > input {
+                    display: block;
+                    width: -webkit-calc(~"100% - 34px"); //For Old Browsers
+                    width: -moz-calc(~"100% - 34px"); //For Old Browsers
+                    width: calc(~"100% - 34px");
+                }
+            }
+
+            .form-element-right {
+                float: left;
+                width: 100%;
+                label{
+                    margin-left:0;
+                    padding-left:15px;
+                }
+                > textarea {
+                    margin: 0;
+                    width: -webkit-calc(~"100% - 34px"); //For Old Browsers
+                    width: -moz-calc(~"100% - 34px"); //For Old Browsers
+                    width: calc(~"100% - 34px");
+                }
+
+                .contact-send-button-shell {
+                    button {
+                        float: right;
+                    }
+                }
+            }
+        }
     }
 }
 

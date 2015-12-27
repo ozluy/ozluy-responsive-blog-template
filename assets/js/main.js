@@ -69,36 +69,6 @@
 
 	/* Awesome burger default */
 
-	var pathA = document.getElementById('pathA'),
-		pathB = document.getElementById('pathB'),
-		pathC = document.getElementById('pathC'),
-		segmentA = new Segment(pathA, beginAC, endAC),
-		segmentB = new Segment(pathB, beginB, endB),
-		segmentC = new Segment(pathC, beginAC, endAC),
-		trigger = document.getElementById('menu-icon-trigger'),
-		toCloseIcon = true,
-		dummy = document.getElementById('dummy'),
-		wrapper = document.getElementById('menu-icon-wrapper');
-
-	wrapper.style.visibility = 'visible';
-
-	trigger.onclick = function() {
-		if (toCloseIcon) {
-			inAC(segmentA);
-			inB(segmentB);
-			inAC(segmentC);
-
-			dummy.className = 'dummy dummy--active';
-		} else {
-			outAC(segmentA);
-			outB(segmentB);
-			outAC(segmentC);
-
-			dummy.className = 'dummy';
-		}
-		toCloseIcon = !toCloseIcon;
-	};
-
 	/* Scale functions */
 
 	function addScale(m) {
