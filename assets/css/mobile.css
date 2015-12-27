@@ -364,7 +364,7 @@
     padding-left: 15px;
   }
   .contact-shell .contact-form .form-element-right > textarea {
-    margin: 0;
+    margin-left: 0;
     width: -webkit-calc(100% - 34px);
     width: -moz-calc(100% - 34px);
     width: calc(100% - 34px);
