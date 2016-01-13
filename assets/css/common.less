@@ -61,13 +61,15 @@ body {
     overflow-x: hidden;
     /*padding-top: 70px; //For fixed nav*/
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0; 
+    margin: 0;
 }
+
 .btn {
     display: inline-block;
     padding: 15px 24px;
@@ -828,22 +830,26 @@ section {
     width: 100%;
 
     .contact-form {
-        .error{
-                color:red;
-            }
-        input.error{
-                border-color:red !important;
-            }
-        textarea.error{
-                border-color:red !important;
-            }
+        .error {
+            color: red;
+        }
+
+        input.error {
+            border-color: red !important;
+        }
+
+        textarea.error {
+            border-color: red !important;
+        }
+
         .form-element-left {
-            
             width: 50%;
             float: left;
-             label{
-                padding-left:15px;
+
+            label {
+                padding-left: 15px;
             }
+
             > input {
                 display: block;
                 width: -webkit-calc(~"95% - 34px"); //For Old Browsers
@@ -857,7 +863,8 @@ section {
                 color: #fff;
                 font-family: Ubuntu;
                 font-size: 15px;
-                margin-top:15px;
+                margin-top: 15px;
+
                 &::-webkit-input-placeholder {
                     font-weight: 300;
                 }
@@ -880,13 +887,14 @@ section {
             float: left;
             width: 50%;
 
-          
-            label{
-                margin-left:2.5%;
-                padding-left:30px;
+
+            label {
+                margin-left: 2.5%;
+                padding-left: 30px;
             }
+
             > textarea {
-                margin-top:15px;
+                margin-top: 15px;
                 resize: none;
                 margin-left: 5%;
                 width: -webkit-calc(~"95% - 34px"); //For Old Browsers
@@ -920,11 +928,36 @@ section {
             }
 
             .contact-send-button-shell {
-                margin-top:15px;
+                margin-top: 15px;
+
                 button {
                     float: right;
                 }
             }
         }
+    }
+}
+
+.google-rainbow {
+    width: 100%;
+    height: 3px;
+    float: left;
+
+    .rainbow-item {
+        width: 25%;
+        height:100%;
+        float:left;
+    }
+    .rainbow-item:nth-child(1) {
+        background-color:#0266C8;
+    }
+    .rainbow-item:nth-child(2) {
+        background-color:#F90101;
+    }
+     .rainbow-item:nth-child(3) {
+        background-color:#F2B50F;
+    }
+      .rainbow-item:nth-child(4) {
+        background-color:#00933B;
     }
 }

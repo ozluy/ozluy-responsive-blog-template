@@ -756,4 +756,26 @@ section {
 .contact-shell .contact-form .form-element-right .contact-send-button-shell button {
   float: right;
 }
+.google-rainbow {
+  width: 100%;
+  height: 3px;
+  float: left;
+}
+.google-rainbow .rainbow-item {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.google-rainbow .rainbow-item:nth-child(1) {
+  background-color: #0266C8;
+}
+.google-rainbow .rainbow-item:nth-child(2) {
+  background-color: #F90101;
+}
+.google-rainbow .rainbow-item:nth-child(3) {
+  background-color: #F2B50F;
+}
+.google-rainbow .rainbow-item:nth-child(4) {
+  background-color: #00933B;
+}
 /*# sourceMappingURL=common.css.map */
