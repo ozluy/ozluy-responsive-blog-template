@@ -561,6 +561,7 @@ section {
 }
 .blog-shell .blog-item {
   margin: 15px;
+  color: #486072;
   width: 31%;
   width: calc(33.3% - 22px);
   float: left;
