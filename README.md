@@ -15,7 +15,7 @@ you must install Gulp gloabally
 ```console
 $ npm install --global gulp-cli
 ```
-Then type following command to Terminal to then  open a browser and check __localhost:9191__
+Then type following command to Terminal then  open a browser and check url  __localhost:9191__
 ```console
 $ gulp
 ```
