@@ -8,7 +8,7 @@ node modules install
 ````console
 $ npm install
 ````
-gulp-cli
+Command-line interface(gulp-cli) installation globally 
 ````console
 $ npm install --global gulp-cli
 ````
