@@ -23,11 +23,7 @@
   },
   "homepage": "https://github.com/ozluy/ozluy-responsive-blog-template#readme",
   "devDependencies": {
-<<<<<<< Updated upstream
-    "gulp": "^3.9.1"
-=======
     "gulp": "^3.9.1",
->>>>>>> Stashed changes
   },
   "dependencies": {
     "del": "^2.2.0",
