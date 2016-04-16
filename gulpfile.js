@@ -43,12 +43,6 @@ gulp.task('copy_icons',['clean'], function() {
   .pipe(copy())
   .pipe(gulp.dest('dist/icons'));
 });
-gulp.task('copy_fonts',['clean'], function() {
-  gulp.src(paths.copy_fonts)
-  .pipe(copy())
-  .pipe(gulp.dest('dist/fonts'));
-});
-
 gulp.task('images', function(cb) {
   gulp.src(paths.images).pipe(imageop({
     optimizationLevel: 5,
@@ -99,4 +93,4 @@ gulp.task('watch', function() {
   gulp.watch([paths.html], ['html'], server.notify);
 });
 
-gulp.task('default', ['clean','copy_icons','copy_fonts','images','styles', 'scripts','templates', 'watch','connect']);
+gulp.task('default', ['clean','copy_icons','images','styles', 'scripts','templates', 'watch','connect']);
