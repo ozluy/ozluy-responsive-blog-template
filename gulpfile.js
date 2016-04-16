@@ -29,9 +29,8 @@ var paths = {
 // A gulpfile is just another node program and you can use any package available on npm
 gulp.task('clean', function() {
   // You can use multiple globbing patterns as you would with `gulp.src`
-  return del(['dist']);
+  return del(['dist/**/*']);
 });
-
 gulp.task('connect', function() {
   connect.server({
     root:'./dist',
@@ -39,12 +38,12 @@ gulp.task('connect', function() {
     port:9191
   });
 });
-gulp.task('copy_icons', function() {
+gulp.task('copy_icons',['clean'], function() {
   gulp.src(paths.copy_icons)
   .pipe(copy())
   .pipe(gulp.dest('dist/icons'));
 });
-gulp.task('copy_fonts', function() {
+gulp.task('copy_fonts',['clean'], function() {
   gulp.src(paths.copy_fonts)
   .pipe(copy())
   .pipe(gulp.dest('dist/fonts'));
