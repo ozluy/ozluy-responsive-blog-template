@@ -1,0 +1,51 @@
+extends ./shared/layout.pug
+include ./shared/mixins.jade
+
+block title
+  title ozluy || yusuf özlü - skills
+block content
+ div.home-banner
+   div
+     ul.bxslider-subpages
+       +slider_item('gears','Skills', '#486072')
+ section(class='section-talent section-talent-technical')
+   div.container
+     div.main-title
+       span.ozluy-icon-android Technical Skills
+     div.talent-shell
+       +talent_item('HTML5',90)
+       +talent_item('CSS3',95)
+       +talent_item('Angular',60)
+       +talent_item('Bootstrap',80)
+       +talent_item('Javascript',80)
+       +talent_item('React',30)
+       +talent_item('Responsive Web', 90)
+       +talent_item('C#', 65)
+       +talent_item('ASP.Net MVC', 70)
+       +talent_item('MS SQL', 75)
+       +talent_item('Jade', 95)
+       +talent_item('Sass', 95)
+       +talent_item('.Net', 70)
+       +talent_item('Less', 95)
+       +talent_item('Ecma Script', 80)
+       +talent_item('Java OOP', 75)
+       +talent_item('Photoshop', 25)
+       +talent_item('Python', 30)
+       +talent_item('Git', 90)
+       +talent_item('Bitbucket', 90)
+       +talent_item('Agile', 80)
+       +talent_item('SOLID', 70)
+       +talent_item('TFS', 80)
+       +talent_item('Linux', 65)
+
+ section(class='section-talent section-talent-language')
+   div.container
+     div.main-title
+       span.ozluy-icon-language Language Skills
+     div.talent-shell
+       +lang_talent_item('Turkish', 99.9)
+       +lang_talent_item('English', 85)
+       +lang_talent_item('German', 10)
+       +lang_talent_item('Lithuanian', 15)
+       +lang_talent_item('Spanish', 5)
+       +lang_talent_item('Polish', 2)

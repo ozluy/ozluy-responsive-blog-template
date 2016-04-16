@@ -1,0 +1,22 @@
+include ./mixins.jade
+
+footer
+  div.container
+    ul.socials
+      +social_item('social-mail','mailTo:ozluyusuf@gmail.com','ozluyusuf@Gmail.com','envelope')
+      +social_item('social-linkedin','https://linkedin.com/in/ozluy','LinkedIn.com/in/ozluy','linkedin')
+      +social_item('social-github','https://github.com/ozluy','Github.com/ozluy','github')
+    div.copyright Copyright &copy; 2015 Yusuf Özlü
+
+div.note-for-template-likers
+  div.container
+    span
+      i.ozluy-icon-tag
+      span If you like my website design, check it on
+      a(target='_blank', href='https://github.com/ozluy/ozluy-responsive-blog-template') Github
+      span  it is totally free.
+div.google-rainbow
+  -for (var x = 1; x <= 4; x++)
+      div.rainbow-item
+
+script(src='js/bundle.js' )

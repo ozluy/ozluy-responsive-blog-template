@@ -1,0 +1,22 @@
+extends ./shared/layout.pug
+include ./shared/mixins.jade
+
+block title
+  title ozluy || yusuf özlü - article detail
+block content
+ div.home-banner
+   div
+     ul.bxslider-subpages
+       +slider_item('book','References','#298bc3')
+ section.section-about
+   div.container
+     div.main-title
+       h3 Some of My References
+     div.about-shell
+      div.profile-part
+        div.profile-img-shell
+          img(src='https://placeholdit.imgix.net/~text?txtsize=33&bg=1a354e&txt=Hello%20I%20am%20a%20Article%20Category%20picture%20&w=350&h=150', alt='Blog Image')
+      div.about-text
+        h1.about-text-head Lorem ipsum dolor sit amet
+        -for (var x = 1; x <= 10; x++)
+          p Lorem ipsum dolor sit amet, qui lorem audiam inermis at. Scaevola verterem an quo. Ad sed iudico accumsan honestatis, eos duis fastidii percipit te. Te duo malis invidunt, periculis scriptorem vis ne. Dolor quaerendum no mel. Scaevola verterem an quo. Ad sed iudico accumsan honestatis, eos duis fastidii percipit te. Te duo malis invidunt, periculis scriptorem vis ne. Dolor quaerendum no mel.

@@ -1,0 +1,50 @@
+
+mixin social_item(class_name,href,title, icon)
+  li
+    a(class=class_name,target='_blank', href=href,title=title)
+      i(class='fa fa-'+icon)
+
+mixin slider_item(icon,text,bgcolor)
+  li(style='background-color:'+bgcolor+'')
+    div.slider-inner-shell
+      div.slider-detail
+        i(class='fa fa-' + icon)
+        span #{text}
+
+mixin project_item(title,text)
+  a(class='project-item', href='projects.html')
+    div.project-head
+      div #{title}
+    div.project-body
+      div #{text}
+    div.project-footer
+      div see all
+
+mixin talent_item(talent, percentage)
+  div.talent-item
+    div.talent-title #{talent}
+    div.talent-percentage
+      div(class='talent-my-percentage', style='width:'+percentage+'%')
+
+mixin lang_talent_item(talent, percentage)
+  div.talent-item
+    div.talent-title #{talent}
+    div(class='talent-percentage talent-percentage-language')
+      div(class='talent-my-percentage', style='width:'+percentage+'%')
+
+mixin reference_item(img, title, text)
+  div.reference-item
+    div.img-shell
+      img(src=img)
+    div.text-shell
+      h1.title #{title}
+      p.text #{text}
+
+mixin blog_item
+  a(class='blog-item', href='article-detail.html')
+    div.blog-item-img-shell
+      img(src='https://placeholdit.imgix.net/~text?txtsize=33&bg=1a354e&txt=Hello%20I%20am%20a%20blog%20post%20banner.&w=350&h=150', alt='Blog Post Image')
+    div.blog-item-text-shell
+      h1.title Lorem Ipsum Dolor Sit Amet
+      div.limited-text Lorem ipsum dolor sit amet, qui lorem audiam inermis at. Scaevola verterem an quo. Ad sed iudico accumsan honestatis, eos duis fastidii percipit te. Te duo malis invidunt, periculis scriptorem vis ne. Dolor quaerendum no mel.
+      span.article-see-more See More
