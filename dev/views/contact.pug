@@ -1,0 +1,29 @@
+extends ./shared/layout.pug
+include ./shared/mixins.jade
+
+block title
+  title ozluy || yusuf özlü - contact
+block content
+ div.home-banner
+   div
+     ul.bxslider-subpages
+       +slider_item('envelope','Contact Me','#5bb12f')
+ section
+   div.container
+     div.main-title
+       h3 Send Me Email
+     small ozluyusuf@gmail.com
+     div.contact-shell
+       form.contact-form
+         div.form-element-left
+           input(id='fullname', name='fullname', type='text', placeholder='Full Name')
+           input(id='email', name='email', type='text', placeholder='Email')
+           input(id='phone', name='phone', type='text', placeholder='Phone')
+           input(id='subject', name='subject', type='text', placeholder='Subject')
+         div.form-element-right
+           textarea(id='message', name='message', placeholder='Message')
+           div.contact-send-button-shell
+             button(class='btn btn-blue', type='submit') Send
+
+ section.map-section
+   iframe(src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8510.979441339012!2d29.033542725649472!3d41.04525627485894!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2sus!4v1455005289598', width='100%', height='450', frameborder='0',style='border:0', allowfullscreen)

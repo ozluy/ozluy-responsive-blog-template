@@ -1,0 +1,17 @@
+extends ./shared/layout.pug
+include ./shared/mixins.jade
+
+block title
+  title ozluy || yusuf özlü - articles
+block content
+ div.home-banner
+   div
+     ul.bxslider-subpages
+       +slider_item('book','Articles','#486072')
+ section
+   div.container
+     div.main-title
+       h3 Articles Book
+     div.blog-shell
+      -for (var x = 1; x <= 9; x++)
+        +blog_item

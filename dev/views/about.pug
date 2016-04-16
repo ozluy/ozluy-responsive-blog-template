@@ -1,0 +1,36 @@
+extends ./shared/layout.pug
+include ./shared/mixins.jade
+
+block title
+  title ozluy || yusuf özlü - about
+block content
+ div.home-banner
+   div
+     ul.bxslider-subpages
+       +slider_item('user','About Me','#298bc3')
+ section.section-about
+   div.container
+     h3.main-title Who I am
+     div.about-shell
+       div.profile-part
+         div.profile-img-shell
+           img(src='https://placeholdit.imgix.net/~text?txtsize=33&bg=1a354e&txt=Hello%20I%20am%20a%20profile%20picture%20&w=300&h=300', alt='My Profile Picture')
+         div.profile-detail-shell
+           h3 Yusuf Özlü
+           h4.ozluy-icon-case Full Stack Developer
+             br
+             small September 2014 - March 2016
+           h4.ozluy-icon-case Full Stack Developer
+             br
+             small March 2016 - present
+           h4.ozluy-icon-location Lives in Istanbul, Turkey
+           h4.ozluy-icon-study Studied Computer Science at Istanbul Bilgi University
+            br
+            small Attended from 2009 to 2014
+           h4.ozluy-icon-study Information Technology at Mykolos Romeris University
+            br
+            small Attended from 2013 to 2014
+       div.about-text
+         h1.about-text-head Lorem ipsum dolor sit amet,
+         -for (var x = 1; x <= 9; x++)
+           p Mea sint agam possit ea. Sea elitr reformidans te. Mea in dictas rationibus, mei ex postulant definiebas. Eu quodsi omittantur cum, accusam singulis theophrastus his an, et sit decore oporteat consequat. Mel ex sonet persius interpretaris, mei ad quot timeam postulant, vel an timeam consetetur.
