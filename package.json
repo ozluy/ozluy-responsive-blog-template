@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ozluy/ozluy-responsive-blog-template#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^3.9.1"
   },
   "dependencies": {
     "del": "^2.2.0",
