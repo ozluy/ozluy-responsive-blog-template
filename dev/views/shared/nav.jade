@@ -1,6 +1,5 @@
-mixin nav_item(href,text)
-  li
-    a(href=href) #{text}
+include ./mixins.jade
+
 nav.bg-nav
   div.container
     div.navbar
@@ -19,8 +18,8 @@ nav.bg-nav
               div.dummy__item
 
       ul.navbar-links
-        +nav_item('about.html', 'About')
-        +nav_item('skills.html', 'Skills')
-        +nav_item('references.html', 'References')
-        +nav_item('articles.html', 'Articles')
-        +nav_item('contact.html', 'Contact')
+        +nav_item('about.html', 'About', 'home')
+        +nav_item('skills.html', 'Skills', 'gears')
+        +nav_item('references.html', 'References', 'trophy')
+        +nav_item('articles.html', 'Articles', 'book')
+        +nav_item('contact.html', 'Contact', 'envelope')

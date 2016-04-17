@@ -17,19 +17,11 @@ block content
            img(src='https://placeholdit.imgix.net/~text?txtsize=33&bg=1a354e&txt=Hello%20I%20am%20a%20profile%20picture%20&w=300&h=300', alt='My Profile Picture')
          div.profile-detail-shell
            h3 Yusuf Özlü
-           h4.ozluy-icon-case Full Stack Developer
-             br
-             small September 2014 - March 2016
-           h4.ozluy-icon-case Full Stack Developer
-             br
-             small March 2016 - present
+           +work_experience_item('Front-end Developer', 'March 2016 - present')
+           +work_experience_item('Full Stack Developer', 'September 2014 - March 2016')
            h4.ozluy-icon-location Lives in Istanbul, Turkey
-           h4.ozluy-icon-study Studied Computer Science at Istanbul Bilgi University
-            br
-            small Attended from 2009 to 2014
-           h4.ozluy-icon-study Information Technology at Mykolos Romeris University
-            br
-            small Attended from 2013 to 2014
+           +study_item('Studied Computer Science at Istanbul Bilgi University','Attended from 2009 to 2014')
+           +study_item('Information Technology at Mykolos Romeris University','Attended from 2013 to 2014')
        div.about-text
          h1.about-text-head Lorem ipsum dolor sit amet,
          -for (var x = 1; x <= 9; x++)

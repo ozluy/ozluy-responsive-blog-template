@@ -1,4 +1,10 @@
 
+mixin nav_item(href,text,icon)
+  li
+    a(href=href)
+      i(class='mobil-nav-icon fa fa-' + icon)
+      | #{text}
+
 mixin social_item(class_name,href,title, icon)
   li
     a(class=class_name,target='_blank', href=href,title=title)
@@ -40,6 +46,15 @@ mixin reference_item(img, title, text)
       h1.title #{title}
       p.text #{text}
 
+mixin work_experience_item(title, date)
+   h4.ozluy-icon-case #{title}
+     br
+     small #{date}
+
+mixin study_item(title,date)
+  h4.ozluy-icon-study #{title}
+   br
+   small #{date}
 mixin blog_item
   a(class='blog-item', href='article-detail.html')
     div.blog-item-img-shell
