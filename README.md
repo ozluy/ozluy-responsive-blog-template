@@ -27,5 +27,4 @@ run deafult gulp task
 ````console
 $ gulp
 ````
-####Browser
 open a browser and type _localhost:9191_
