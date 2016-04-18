@@ -9,9 +9,9 @@ You can check demo on http://ozluy.github.io/projects/blog-template
 - JQuery
 - Responsive Design
 - Font Awesome
-- Pug(Jade) Templating Engine
-- LESS css processors
-- Gulp tasks 
+- Pug(Jade) templating engine
+- LESS css processor
+- Gulp javascript task runner
 - Some JQuery plugins
 
 ####requirements
