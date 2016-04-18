@@ -5,7 +5,6 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var less = require('gulp-less');
-var path = require('path');
 var minifyCSS = require('gulp-minify-css');
 var del = require('del');
 var server = require('gulp-express');

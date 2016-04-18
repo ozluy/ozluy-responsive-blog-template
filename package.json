@@ -38,7 +38,6 @@
     "gulp-pug": "^1.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
-    "path": "^0.12.7",
     "pug": "^0.1.0"
   }
 }
