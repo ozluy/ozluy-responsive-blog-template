@@ -14,7 +14,10 @@ You can check demo on http://ozluy.github.io/projects/blog-template
 - Gulp javascript task runner
 - Some JQuery plugins
 
-####requirements
+####install with npm
+```console
+npm install ozluy-blog-template
+```
 node modules install
 ````console
 $ npm install
