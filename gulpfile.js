@@ -4,11 +4,11 @@ var livereload = require('gulp-livereload');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
-var less = require('gulp-less');
+var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 var del = require('del');
 var server = require('gulp-express');
-var pug = require('gulp-pug');
+var pug = require('gulp-jade');
 var imageop = require('gulp-image-optimization');
 var copy = require('gulp-contrib-copy');
 
@@ -16,9 +16,10 @@ var paths = {
   port:9191,
   devBaseUrl: 'http://localhost',
   scripts: ['dev/assets/js/jquery.min.js',  'dev/assets/js/jquery.bxslider.min.js',  'dev/assets/js/segment.min.js',  'dev/assets/js/validator.min.js',  'dev/assets/js/ease.min.js',  'dev/assets/js/main.js',  'dev/assets/js/common.js'],
-  styles:'dev/assets/css/*.less',
+  styles:'dev/assets/css/*.scss',
   html:'./dev/*.html',
   templates:'./dev/views/*.pug',
+  shared_templates:'./dev/views/shared/*.jade',
   images:['dev/assets/img/*.png','dev/assets/img/*.jpg','dev/assets/img/*.gif','dev/assets/img/*.jpeg','dev/assets/img/*.svg'],
   copy_icons:'dev/assets/icons/**/*',
   copy_fonts:'dev/assets/fonts/**/*'
@@ -60,9 +61,13 @@ gulp.task('templates', function() {
   .pipe(gulp.dest('dist'))
   .pipe(connect.reload());
 });
+gulp.task('shared_templates', function() {
+  return gulp.src(paths.shared_templates)
+  .pipe(pug({ pretty: true }))
+  //.pipe(gulp.dest('dist'))
+  .pipe(connect.reload());
+});
 gulp.task('scripts', function() {
-  // Minify and copy all JavaScript
-  // with sourcemaps all the way down
   return gulp.src(paths.scripts)
   .pipe(sourcemaps.init())
   .pipe(uglify())
@@ -71,13 +76,14 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest('dist/js'))
   .pipe(connect.reload());
 });
-gulp.task('styles',  function() {
-  // Minify and copy all css
-  // with sourcemaps all the way down
+
+gulp.task('styles', function() {
   return gulp.src(paths.styles)
-  .pipe(less())
+  .pipe(sourcemaps.init())
+  .pipe(sass().on('error', sass.logError))
   .pipe(minifyCSS())
   .pipe(concat('bundle.css'))
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest('dist/css'))
   .pipe(connect.reload());
 });
@@ -88,8 +94,9 @@ gulp.task('styles',  function() {
 gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['scripts'], server.notify);
   gulp.watch(paths.styles, ['styles'], server.notify);
+  gulp.watch([paths.shared_templates], ['shared_templates','templates'], server.notify);
   gulp.watch([paths.templates], ['templates'], server.notify);
   gulp.watch([paths.html], ['html'], server.notify);
 });
 
-gulp.task('default', ['clean','copy_icons','images','styles', 'scripts','templates', 'watch','connect']);
+gulp.task('default', ['clean','copy_icons','images','styles', 'scripts','shared_templates', 'templates', 'watch','connect']);
