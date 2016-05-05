@@ -1,0 +1,220 @@
+
+.menu-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin: 20px 20px;
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+.menu-icon-wrapper.scaled {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.menu-icon-wrapper svg {
+  position: absolute;
+  top: -33px;
+  left: -28px;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.menu-icon-wrapper {
+  svg {
+    path {
+      stroke: #fff;
+      stroke-width: 60px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: transparent;
+    }
+  }
+
+  &:hover {
+    stroke: #000;
+  }
+}
+
+.menu-icon-wrapper .menu-icon-trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  pointer-events: auto;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-icon-wrapper .menu-icon-trigger:hover,
+.menu-icon-wrapper .menu-icon-trigger:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+.info {
+  padding: 2em 1em;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+.info-img {
+  margin: 1em auto 0;
+  display: block;
+}
+
+
+.device__screen {
+  margin-right: -10px !important;
+  display: none !important;
+  float: right;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  text-align: left;
+  border-radius: 4px 4px 0 0;
+}
+
+.see-all-block {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.device__screen {
+  background: transparent;
+}
+
+.device--alt .device__screen {
+}
+
+.dummy__item {
+  height: 3em;
+  margin: 1em 1.25em;
+  pointer-events: none;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.dummy__item {
+  -webkit-transform: translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1);
+  transform: translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.device--alt .dummy__item {
+  -webkit-transform: translate3d(0, 260px, 0) scale3d(1, 0.2, 1);
+  transform: translate3d(0, 260px, 0) scale3d(1, 0.2, 1);
+}
+
+.dummy--active .dummy__item {
+  -webkit-transition-timing-function: cubic-bezier(0.56, 1.19, 0.2, 1.05);
+  transition-timing-function: cubic-bezier(0.56, 1.19, 0.2, 1.05);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.dummy__item:nth-child(4),
+.dummy--active .dummy__item:first-child {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.dummy__item:nth-child(3),
+.dummy--active .dummy__item:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.dummy__item:nth-child(2),
+.dummy--active .dummy__item:nth-child(3) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.dummy__item:first-child,
+.dummy--active .dummy__item:nth-child(4) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* Related demos */
+
+.content--related {
+  font-weight: bold;
+  padding: 4em 1em 2em;
+  text-align: center;
+  color: #76768E;
+  background: #373752;
+}
+
+.content--related h3 {
+  margin: 0 0 7em;
+}
+
+.media-item {
+  display: inline-block;
+  padding: 1em;
+  vertical-align: top;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.media-item__img {
+  max-width: 100%;
+  opacity: 0.3;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+  opacity: 1;
+}
+
+.media-item__title {
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 50em) {
+  .codrops-header h1 {
+    font-size: 2.25em;
+  }
+
+  .content--related {
+    padding: 3em 1em;
+  }
+
+  .device {
+    height: auto;
+    background-image: none;
+  }
+
+  .device__screen {
+    margin: 0;
+    border-radius: 0;
+  }
+}

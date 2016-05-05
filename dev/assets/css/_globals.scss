@@ -1,0 +1,29 @@
+//Cross Browser Support
+@import '../../../node_modules/saz/_saz.scss';
+
+$nav-bg-color: rgba(250, 250, 250, .4);
+$color-navy: #1a354e;
+$color-blue: #486072;
+$color-red: #bd0102;
+$color-lightblue: #298bc3;
+$color-yellow: #5bb12f;
+$color-gray: #a1a1a1;
+$vs-purple: rgb(51,20,88);
+$desktop_width: 1200px;
+$tablet_width: 991px;
+$mobile_width: 768px;
+
+//Font sizes
+$font-size-xxl: 40px;
+$font-size-xl: 30px;
+$font-size-l: 25px;
+$font-size-m: 20px;
+$font-size-s: 18px;
+$font-size-xs: 15px;
+$font-size-xxs: 12px;
+
+//Font weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;

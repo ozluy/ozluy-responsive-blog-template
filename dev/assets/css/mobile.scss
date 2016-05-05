@@ -1,0 +1,337 @@
+@import 'globals';
+
+$nav-bg-color: #444444;
+
+@media screen and (max-width: $desktop_width) {
+
+  .talent-shell {
+    .talent-item {
+      @include calc(width,'100% - 15px');
+      margin: 10px !important;
+    }
+
+    .talent-item:nth-child(3n+1) {
+      margin-left: 0 !important;
+    }
+
+    .talent-item:nth-child(3n) {
+      margin-right: 0 !important;
+    }
+  }
+
+  .projects-shell {
+    .project-item {
+      @include calc(width,'100% - 15px');
+      margin: 10px !important;
+    }
+
+    .project-item:nth-child(3n+1) {
+      margin-left: 0 !important;
+    }
+
+    .project-item:nth-child(3n) {
+      margin-right: 0 !important;
+    }
+  }
+
+  .container {
+    @include calc(width, '100% - 30px');
+  }
+
+  .about-shell {
+    .profile-part {
+    }
+
+    .about-text {
+    }
+  }
+}
+
+@media screen and (max-width: $tablet_width) {
+  .blog-shell {
+    .blog-item {
+      @include calc(width, '50% - 18px');
+      margin: 15px !important;
+    }
+
+    .blog-item:nth-child(even) {
+      margin-right: 0 !important;
+    }
+
+    .blog-item:nth-child(odd) {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile_width) { //768 - 991 tablets portraits
+
+  .references-shell {
+    .reference-item {
+      .img-shell{
+        width:100%;
+        text-align:center;
+      }
+      .text-shell{
+        width:100%;
+        text-align:center;
+      }
+    }
+  }
+
+  .talent-shell {
+    .talent-item {
+      @include calc(width, '50.3% - 15px');
+      margin: 10px !important;
+    }
+
+    .talent-item:nth-child(3n+1) {
+      margin-left: 10px !important;
+    }
+
+    .talent-item:nth-child(3n) {
+      margin-right: 10px !important;
+    }
+
+    .talent-item:nth-child(odd) {
+      margin-left: 0 !important;
+    }
+
+    .talent-item:nth-child(even) {
+      margin-right: 0 !important;
+    }
+  }
+
+  .projects-shell {
+    .project-item {
+      @include calc(width, '50.3% - 15px');
+      margin: 10px !important;
+    }
+
+    .project-item:nth-child(3n+1) {
+      margin-left: 10px !important;
+    }
+
+    .project-item:nth-child(3n) {
+      margin-right: 10px !important;
+    }
+
+    .project-item:nth-child(odd) {
+      margin-left: 0 !important;
+    }
+
+    .project-item:nth-child(even) {
+      margin-right: 0 !important;
+    }
+  }
+
+  .about-shell {
+    .profile-part {
+      width: 100%;
+      padding: 0;
+    }
+
+    .about-text {
+      width: 100%;
+    }
+  }
+
+  .socials {
+    width: 100%;
+    height: 50%;
+
+    li {
+      display: inline;
+      float: none;
+      position: relative;
+      top: 0;
+      line-height: 80px;
+      @include transform(none);
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    height: 30%;
+    position: unset;
+    top: auto;
+    @include transform(none);
+    line-height: 40px;
+  }
+
+
+
+  footer {
+    height: 120px;
+    text-align: center;
+  }
+
+  .bg-nav {
+    background-color: $nav-bg-color !important;
+  }
+
+  nav {
+    .navbar {
+
+      .navbar-links {
+        @include transition(all 600ms ease);
+        position: fixed;
+        top: 70px;
+        @include transform(none);
+        float: none;
+        list-style: none;
+        margin: 0;
+        width: 300px;
+        text-align: center;
+        background-color: rgba(25,20,21,.90);
+        padding: 0;
+        right: 0;
+        bottom: 0;
+        visibility: hidden;
+        margin-left: -15px;
+        height: 100%;
+        margin-right: -300px;
+
+        li {
+          float: none;
+          padding: 20px 0 !important;
+          text-align: left;
+          > a {
+            color: #fff !important;
+            padding: 0 0 0 0 !important;
+            padding-left: 100px !important;
+            text-transform: capitalize;
+            .mobil-nav-icon{
+              color:$color-yellow;
+              padding-right: 10px;
+              display: inline;;
+            }
+          }
+
+          border-bottom: dotted 1px rgba(255,255,255,.2);
+        }
+
+      }
+    }
+  }
+
+  .device__screen {
+    display: inline-block !important;
+  }
+
+  nav .navbar .ozluy-logo .ozluy-zluy {
+    color: #fff !important;
+  }
+
+  nav .navbar .ozluy-logo .ozluy-o {
+    border: solid $nav-bg-color 1px !important;
+  }
+
+  nav {
+    .navbar {
+      .navbar-links-opened {
+        @include transform(translateX(-300px));
+        visibility: visible;
+      }
+    }
+  }
+
+  .blog-shell {
+    .blog-item {
+      @include calc(width, '100% - 2px');
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  .contact-shell {
+    padding: 20px 0;
+    float: left;
+    width: 100%;
+
+    .contact-form {
+      .form-element-left {
+        width: 100%;
+        float: left;
+
+        > input {
+          display: block;
+          @include calc(width, '100% - 34px');
+        }
+      }
+
+      .form-element-right {
+        float: left;
+        width: 100%;
+        label{
+          margin-left:0;
+          padding-left:15px;
+        }
+        > textarea {
+          margin-left: 0;
+          @include calc(width, '100% - 34px');
+        }
+
+        .contact-send-button-shell {
+          width:auto;
+          button {
+            float: none;
+            text-transform:uppercase;
+            display:block !important;
+            width:100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:500px) { //768 - 991 tablets portraits
+
+
+  .talent-shell {
+    .talent-item {
+      @include calc(width, '100% - 15px');
+      margin: 10px !important;
+    }
+
+    .talent-item:nth-child(3n+1) {
+      margin-left: 10px !important;
+    }
+
+    .talent-item:nth-child(3n) {
+      margin-right: 10px !important;
+    }
+
+    .talent-item:nth-child(odd) {
+      margin-left: 10px !important;
+    }
+
+    .talent-item:nth-child(even) {
+      margin-right: 10px !important;
+    }
+  }
+
+  .projects-shell {
+    .project-item {
+      @include calc(width, '100% - 15px');
+      margin: 10px !important;
+    }
+
+    .project-item:nth-child(3n+1) {
+      margin-left: 10px !important;
+    }
+
+    .project-item:nth-child(3n) {
+      margin-right: 10px !important;
+    }
+
+    .project-item:nth-child(odd) {
+      margin-left: 10px !important;
+    }
+
+    .project-item:nth-child(even) {
+      margin-right: 10px !important;
+    }
+  }
+}
