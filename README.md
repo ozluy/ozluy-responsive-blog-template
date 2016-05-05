@@ -10,7 +10,8 @@ You can check demo on http://ozluy.github.io/projects/blog-template
 - Responsive Design
 - Font Awesome
 - Pug(Jade) templating engine
-- LESS css processor
+- SASS css processor
+- _saz_ Mixin Library (https://github.com/ozluy/saz)
 - Gulp javascript task runner
 - Some JQuery plugins
 
@@ -22,7 +23,7 @@ node modules install
 ````console
 $ npm install
 ````
-Command-line interface(gulp-cli) installation globally 
+Command-line interface(gulp-cli) installation globally
 ````console
 $ npm install --global gulp-cli
 ````
